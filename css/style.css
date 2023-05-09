@@ -2,7 +2,7 @@
     padding: 80px; /* some padding */
     text-align: center; /* center the text */
     background: #144e43; /* green background */
-    color: white; /* white text color */
+    color: rgb(255, 255, 255); /* white text color */
   }
   
   /* Increase the font size of the <h1> element */
