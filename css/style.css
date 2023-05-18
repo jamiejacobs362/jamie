@@ -1,8 +1,14 @@
+body {
+  margin: auto;
+  padding: 0 100px;
+  background-color: #dddddd;
+}
+
 .header {
-    padding: 80px; /* some padding */
+    padding: 20px; /* some padding */
     text-align: center; /* center the text */
-    background: #144e43; /* green background */
-    color: rgb(255, 255, 255); /* white text color */
+    background: #ffffff; /* green background */
+    color: black; /* black text color */
   }
   
   /* Increase the font size of the <h1> element */
@@ -12,7 +18,8 @@
   /* Style the top navigation bar */
 .navbar {
     overflow: hidden; /* Hide overflow */
-    background-color: #333; /* Dark background color */
+    background-color: #1F6196; /* blue background color */
+   
   }
   
   /* Style the navigation bar links */
@@ -50,20 +57,21 @@
   /* Sidebar/left column */
   .side {
     flex: 30%; /* Set the width of the sidebar */
-    background-color: #2f614c; /* Grey background color */
+    background-color: #6CB9BE; /* light blue background color */
     padding: 20px; /* Some padding */
   }
   
   /* Main column */
   .main {
     flex: 70%; /* Set the width of the main content */
-    background-color: #2f614c; /* White background color */
+    background-color: #6CB9BE; /* light blue background color */
     padding: 20px; /* Some padding */
   }
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
     .row {
       flex-direction: column;
+    
     }
   }
   
@@ -77,5 +85,5 @@
   .footer {
     padding: 20px; /* Some padding */
     text-align: center; /* Center text*/
-    background: #144e43; /* Grey background */
+    background: #0E834C; /* green background */
   }
