@@ -47,20 +47,17 @@ include "navbar.php";
         <img src="images/shelf1.jpg" alt="Shelf where food avabile is shown" width="100%">
     </div>
     <div class="main">
-    <div class="gallery">
-  <a target="_blank" href="images/shelf2.jpg">
-    <img src="images/shelf2.jpg" alt="Shelf where food avabile is shown" width="100%">
-  </a>
-</div> 
-        
+     <h2>Contact Form</h2>
 
-
-<div class="gallery">
-  <a target="_blank" href="images/shelf3.jpg">
-    <img src="images/shelf3.jpg" alt="Shelf where food avabile is shown" width="100%">
-  </a>
-
-</div>
+    <form action="action_page.php" method="post"> 
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <label for="email">email:</label><br>
+  <input type="text" id="email" name="email" value="john@mail.com"><br><br>
+</form> 
         </div>
     </div>
 

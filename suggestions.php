@@ -11,7 +11,7 @@
 
 <body>
 <div class="header">
-  <img src="images/heading.jpg" alt="">
+  <img src="images/heading.jpg" alt="" width="100%">
   <p>This is the sug</p>
 </div>
 

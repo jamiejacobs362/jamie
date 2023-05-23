@@ -34,7 +34,7 @@ div.desc {
 
 <body>
 <div class="header">
-  <img src="images/heading.jpg" alt="">
+  <img src="images/heading.jpg" alt="" width="100%">
   <p>A website created by me.</p>
 </div>
 
