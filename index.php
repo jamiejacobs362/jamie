@@ -33,24 +33,26 @@ div.desc {
 </head>
 
 <body>
+    <div class="wrapper">
 <div class="header">
-  <img src="images/heading.jpg" alt="">
+  <img src="images/heading.jpg" alt="" width="100%">
   <p>A website created by me.</p>
 </div>
 
 <?php
 include "navbar.php";
 ?>
-<div class="row">
-  <div class="side"><img src="images/shelf1.jpg" alt="Shelf where food avabile is shown" width="600" height="400"></div>
-  <div class="main">
+ <div class="row">
+    <div class="side">
+        <img src="images/shelf1.jpg" alt="Shelf where food avabile is shown" width="100%">
+    </div>
+    <div class="main">
     <div class="gallery">
   <a target="_blank" href="images/shelf2.jpg">
     <img src="images/shelf2.jpg" alt="beef" width="600" height="400">
   </a>
-</div>
-</div>
-</div>
+</div> 
+        
 
 
 <div class="gallery">
@@ -59,12 +61,13 @@ include "navbar.php";
   </a>
 
 </div>
-
+        </div>
+    </div>
 
 <div class="footer">
   <h2>Footer</h2>
 </div>
-
+    </div>
 </body>
 
 </html>
