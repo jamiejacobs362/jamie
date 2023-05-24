@@ -33,6 +33,7 @@ div.desc {
 </head>
 
 <body>
+      <div class="wrapper">
 <div class="header">
   <img src="images/heading.jpg" alt="" width="100%">
   <p>A website created by me.</p>
@@ -90,7 +91,7 @@ include "navbar.php";
 <div class="footer">
   <h2>Footer</h2>
 </div>
-
+    </div>
 </body>
 
 </html>

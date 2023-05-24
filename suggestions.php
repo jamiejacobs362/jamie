@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="wrapper">
 <div class="header">
   <img src="images/heading.jpg" alt="" width="100%">
   <p>This is the sug</p>
@@ -26,7 +27,7 @@ include "navbar.php";
 <div class="footer">
   <h2>Footer</h2>
 </div>
-
+    </div>
 </body>
 
 </html>
