@@ -35,7 +35,8 @@ div.desc {
 <body>
     <div class="wrapper">
 <div class="header">
-  <img src="images/heading.jpg" alt="" width="100%">
+    <a href="#default" class="logo"> <img src="images/logo.jpg" alt="Whangamata's area school logo"></a>
+  <img src="images/heading.jpg" alt="" width="60%">
   <p>A website created by me.</p>
 </div>
 
@@ -43,26 +44,26 @@ div.desc {
 include "navbar.php";
 ?>
  <div class="row">
-    <div class="side">
-        <img src="images/shelf1.jpg" alt="Shelf where food avabile is shown" width="100%">
-    </div>
     <div class="main">
+    <div class="gallery">
+  <a target="_blank" href="images/shelf1.jpg">
+    <img src="images/shelf1.jpg" alt="Shelf where food avabile is shown" width="100%">
+  </a>
+</div> 
+
     <div class="gallery">
   <a target="_blank" href="images/shelf2.jpg">
     <img src="images/shelf2.jpg" alt="Shelf where food avabile is shown" width="100%">
   </a>
 </div> 
         
-
-
 <div class="gallery">
   <a target="_blank" href="images/shelf3.jpg">
     <img src="images/shelf3.jpg" alt="Shelf where food avabile is shown" width="100%">
   </a>
-
 </div>
-        </div>
-    </div>
+</div>
+</div>
 
 <div class="footer">
   <h2>Footer</h2>

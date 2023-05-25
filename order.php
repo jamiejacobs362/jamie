@@ -35,7 +35,8 @@ div.desc {
 <body>
       <div class="wrapper">
 <div class="header">
-  <img src="images/heading.jpg" alt="" width="100%">
+    <a href="#default" class="logo"> <img src="images/logo.jpg" alt="Whangamata's area school logo"></a>
+  <img src="images/heading.jpg" alt="" width="60%">
   <p>A website created by me.</p>
 </div>
 

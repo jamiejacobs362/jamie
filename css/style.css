@@ -15,11 +15,14 @@ body {
 
 }
 
+
+
 .header {
     padding: 20px; /* some padding */
     text-align: center; /* center the text */
     background: #ffffff; /* green background */
     color: black; /* black text color */
+    margin: auto;
   }
   
   /* Increase the font size of the <h1> element */
@@ -97,6 +100,7 @@ body {
       width: 100%;
     }
   }
+
   .footer {
     padding: 20px; /* Some padding */
     text-align: center; /* Center text*/
