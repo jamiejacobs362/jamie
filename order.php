@@ -49,27 +49,26 @@ include "navbar.php";
   <a target="_blank" href="images/mac&cheese.jpg">
     <img src="images/mac&cheese.jpg" alt="mac&cheese" width="100%">
   </a>
-  <div class="desc">This our juicie</div>
-        <div class="gallery">
+  <div class="desc">Mac and cheese </div>
+</div>
+    <div class="gallery">
   <a target="_blank" href="images/juicie.jpg" width="100%">
     <img src="images/juicie.jpg" alt="juicie" width="100%">
   </a>
-  <div class="desc">This our water</div>
-</div>
+  <div class="desc">This our juicie</div>
 </div>
 <div class="gallery">
   <a target="_blank" href="images/water.jpg">
     <img src="images/water.jpg" alt="water" width="100%">
   </a>
   <div class="desc">This our water</div>
-    
-     <div class="gallery">
+</div>
+    <div class="gallery">
   <a target="_blank" href="images/juicie2.jpg">
     <img src="images/juicie2.jpg" alt="juicie" width="100%">
   </a>
   <div class="desc">This our juicie</div>
-</div>
-</div>
+    </div>
       <div class="gallery">
   <a target="_blank" href="images/hotdog.jpg">
     <img src="images/hotdog.jpg" alt="hotdog" width="100%">
@@ -77,7 +76,7 @@ include "navbar.php";
   <div class="desc">This our hotdog</div>
 </div> 
    <div class="gallery">
-  <a target="_blank" href="images/hotdog.jpg">
+  <a target="_blank" href="images/IMG_8479.jpg">
     <img src="images/IMG_8479.jpg" alt="hotdog" width="100%">
   </a>
   <div class="desc">This our hotdog</div>
@@ -85,8 +84,6 @@ include "navbar.php";
       
 </div>
 </div>
-    
-
     
     
 <div class="footer">
