@@ -55,9 +55,10 @@ include "navbar.php";
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
   <label for="email">email:</label><br>
   <input type="text" id="email" name="email" value="john@mail.com"><br><br>
+    Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+<input type="submit" value="Submit">
 </form> 
         </div>
     </div>
