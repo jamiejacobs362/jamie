@@ -44,7 +44,9 @@ div.desc {
 include "navbar.php";
 ?>
 <div class="row">
+   
   <div class="main">
+       <div class="wrapper">
     <div class="gallery">
   <a target="_blank" href="images/mac&cheese.jpg">
     <img src="images/mac&cheese.jpg" alt="mac&cheese" width="100%">
@@ -126,6 +128,8 @@ include "navbar.php";
       
 </div>
 </div>
+</div>
+          
     
     
 <div class="footer">
