@@ -44,7 +44,7 @@ include "navbar.php";
 ?>
  <div class="row">
     <div class="main">
-     <h2>Contact Form</h2>
+     <h1>Suggestions</h1>
 
     <form action="action_page.php" method="post"> 
   <label for="fname">First name:</label><br>
