@@ -14,7 +14,7 @@
 <div class="header">
     <a href="#default" class="logo"> <img src="images/logo.jpg" alt="Whangamata's area school logo"></a>
   <img src="images/heading.jpg" alt="" wdith="60%">
-  <p>This is the sug</p>
+  
 </div>
 
 <?php

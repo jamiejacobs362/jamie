@@ -38,7 +38,7 @@ div.desc {
 <div class="header">
     <a href="#default" class="logo"> <img src="images/logo.jpg" alt="Whangamata's area school logo"></a>
   <img src="images/heading.jpg" alt="" width="60%">
-  <p>A website created by me.</p>
+
 </div>
 
 <?php
@@ -46,7 +46,7 @@ include "navbar.php";
 ?>
  <div class="row">
     <div class="main">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h1>Welcome to <br> Kura Canteen</h1>
     <div class="gallery">
   <a target="_blank" href="images/shelf1.jpg">
     <img src="images/shelf1.jpg" alt="Shelf where food avabile is shown" width="100%">

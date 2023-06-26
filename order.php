@@ -13,7 +13,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 29%;
 }
 
 div.gallery:hover {
@@ -37,7 +37,6 @@ div.desc {
 <div class="header">
     <a href="#default" class="logo"> <img src="images/logo.jpg" alt="Whangamata's area school logo"></a>
   <img src="images/heading.jpg" alt="" width="60%">
-  <p>A website created by me.</p>
 </div>
 
 <?php
@@ -63,7 +62,7 @@ include "navbar.php";
   <a target="_blank" href="images/juicie.jpg">
     <img src="images/juicie.jpg" alt="juicie" width="100%">
   </a>
-  <div class="desc">This is our water</div>
+  <div class="desc">This is our juicie</div>
 </div>
     <div class="gallery">
   <a target="_blank" href="images/juicie2.jpg">
