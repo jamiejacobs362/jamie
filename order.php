@@ -46,7 +46,8 @@ include "navbar.php";
    
   <div class="main">
        <div class="wrapper">
-    <div class="gallery">
+           
+    <div class="gallery"> 
   <a target="_blank" href="images/mac&cheese.jpg">
     <img src="images/mac&cheese.jpg" alt="mac&cheese" width="100%">
   </a>

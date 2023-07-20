@@ -21,8 +21,13 @@
 include "navbar.php";
 ?>
 <div class="row">
-  <div class="side"><img src="images/beef.jpg" alt=""></div>
-  <div class="main">main</div>
+  <div class="main">
+      
+    <div class=”Cart-Container”>
+      
+      </div>
+    </div>
+    
 </div>
 
 <div class="footer">
