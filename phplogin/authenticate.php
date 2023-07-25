@@ -26,14 +26,6 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
 	// Store the result so we can check if the account exists in the database.
 	$stmt->store_result();
 
-
-	$stmt->close();
-}
-
-?>
-
-$stmt->store_result();
-
 if ($stmt->num_rows > 0) {
 	$stmt->bind_result($id, $password);
 	$stmt->fetch();
@@ -46,7 +38,7 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['loggedin'] = TRUE;
 		$_SESSION['name'] = $_POST['username'];
 		$_SESSION['id'] = $id;
-		echo 'Welcome ' . $_SESSION['name'] . '!';
+		header('Location: home.php');
 	} else {
 		// Incorrect password
 		echo 'Incorrect username and/or password!';
@@ -57,3 +49,11 @@ if ($stmt->num_rows > 0) {
 }
 
 if (password_verify($_POST['password'], $password)) {}
+    
+	$stmt->close();
+}
+
+
+?>
+
+
