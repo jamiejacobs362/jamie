@@ -69,8 +69,26 @@ div.desc {
 
 <?php
 include "navbar.php";
-          if(isset($_GET['image'])) {
-    $image = $_GET['image'];}
+          if(isset($_GET['id'])) {
+    $id = $_GET['id'];}
+    // Include the setup.php file to establish database connection
+    require_once 'setup.php';
+    // Fetch records from the "items" table
+    $sql = "SELECT * FROM items where id=$id";
+    $stmt = mysqli_prepare($conn, $sql);
+mysqli_stmt_execute($stmt);
+ $result = mysqli_stmt_get_result($stmt);
+
+if (mysqli_num_rows($result) > 0) {
+  $row = mysqli_fetch_assoc($result);
+             //print_r($row);
+         // [id] => 1 [name] => Mac and cheese [price] => 3 [description] => This is our mac and cheese [image] => maccheese.jpg 
+        $id = $row['id']; 
+        $name = $row['name'];
+        $price = $row['price'];
+        $description = $row['description'];
+        $image = $row['image'];
+}
 ?>
 <div class="row">
    
@@ -80,10 +98,10 @@ include "navbar.php";
 <h2 style="text-align:center">Product Card</h2>
 
 <div class="card">
-  <img src="images/<?php print $image; ?>" alt="Denim Jeans" style="width:100%">
-  <h1>Tailored Jeans</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <img src="images/<?php print $image; ?>" alt="<?php print $description; ?>" style="width:100%">
+  <h1><?php print $name; ?></h1>
+  <p class="price">$<?php print $price; ?></p>
+  <p><?php print $description; ?>.</p>
   <p><button>Add to Cart</button></p>
 </div>
            

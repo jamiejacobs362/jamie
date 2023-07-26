@@ -46,86 +46,35 @@ include "navbar.php";
    
   <div class="main">
        <div class="wrapper">
-           
-    <div class="gallery"> 
-  <a target="_blank" href="product.php?image=maccheese.jpg">
-    <img src="images/maccheese.jpg" alt="maccheese" width="100%">
+           <?php 
+    // Include the setup.php file to establish database connection
+    require_once 'setup.php';
+    // Fetch records from the "items" table
+    $sql = "SELECT * FROM items";
+    $stmt = mysqli_prepare($conn, $sql);
+mysqli_stmt_execute($stmt);
+ $result = mysqli_stmt_get_result($stmt);
+
+if (mysqli_num_rows($result) > 0) {
+    // Display the records in the items table
+         while ($row = mysqli_fetch_assoc($result)) { 
+             //print_r($row);
+         // [id] => 1 [name] => Mac and cheese [price] => 3 [description] => This is our mac and cheese [image] => maccheese.jpg 
+        $id = $row['id']; 
+        $name = $row['name'];
+        $price = $row['price'];
+        $description = $row['description'];
+        $image = $row['image'];
+             print"<div class='gallery'>
+  <a target=' blank' href='product.php?id=$id' width='100%'>
+    <img src='images/$image' alt='$description' width='100%'>
   </a>
-  <div class="desc">Our mac and cheese </div>
+  <div class='desc'> $description</div>
 </div>
-    <div class="gallery">
-  <a target="_blank" href="product.php?image=water.jpg" width="100%">
-    <img src="images/water.jpg" alt="water" width="100%">
-  </a>
-  <div class="desc">This is our water</div>
-</div>
-<div class="gallery">
-  <a target="_blank" href="product.php?image=juicie.jpg">
-    <img src="images/juicie.jpg" alt="juicie" width="100%">
-  </a>
-  <div class="desc">This is our juicie</div>
-</div>
-    <div class="gallery">
-  <a target="_blank" href="product.php?image=juicie2.jpg">
-    <img src="images/juicie2.jpg" alt="juicie" width="100%">
-  </a>
-  <div class="desc">This is our juicie</div>
-    </div>
-      <div class="gallery">
-  <a target="_blank" href="product.php?image=hotdog.jpg">
-    <img src="images/hotdog.jpg" alt="hotdog" width="100%">
-  </a>
-  <div class="desc">This is our hotdog</div>
-</div> 
-   <div class="gallery">
-  <a target="_blank" href="product.php?image=IMG_8479.jpg">
-    <img src="images/IMG_8479.jpg" alt="hotdog" width="100%">
-  </a>
-  <div class="desc">This is our hotdog</div>
-</div> 
-   <div class="gallery">
-  <a target="_blank" href="product.php?image=pie.jpg">
-    <img src="images/pie.jpg" alt="pie" width="100%">
-  </a>
-  <div class="desc">This is our pie</div>
-</div>
-   <div class="gallery">
-  <a target="_blank" href="product.php?image=pizza.jpg">
-    <img src="images/pizza.jpg" alt="pizza" width="100%">
-  </a>
-  <div class="desc">This is our pizza</div>
-</div>
-   <div class="gallery">
-  <a target="_blank" href="product.php?image=popcorn.jpg">
-    <img src="images/popcorn.jpg" alt="popcorn" width="100%">
-  </a>
-  <div class="desc">This is our popcorn</div>
-</div>      
-   <div class="gallery">
-  <a target="_blank" href="product.php?image=pork_dumplings.jpg">
-    <img src="images/pork_dumplings.jpg" alt="pork dumplings" width="100%">
-  </a>
-  <div class="desc">This is our pork dumplings</div>
-</div>
-   <div class="gallery">
-  <a target="_blank" href="product.php?image=spaghetti_on_bun.jpg">
-    <img src="images/spaghetti_on_bun.jpg" alt="spaghetti on a bun" width="100%">
-  </a>
-  <div class="desc">This is our spaghetti on a bun</div>
-</div>
-   <div class="gallery">
-  <a target="_blank" href="product.php?image=upgo_banana.jpg">
-    <img src="images/upgo_banana.jpg" alt="up & go banana" width="100%">
-  </a>
-  <div class="desc">This is our up and go bannana flavour</div>
-</div>
-   <div class="gallery">
-  <a target="_blank" href="product.php?image=upgo_vanilla.jpg">
-    <img src="images/upgo_vanilla.jpg" alt="up & go vanilla" width="100%">
-  </a>
-  <div class="desc">This is our up and go vanilla flavour</div>
-</div>
-      
+             ";
+     } 
+
+}  ?>
 </div>
 </div>
 </div>
