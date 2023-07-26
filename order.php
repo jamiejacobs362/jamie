@@ -48,80 +48,80 @@ include "navbar.php";
        <div class="wrapper">
            
     <div class="gallery"> 
-  <a target="_blank" href="images/mac&cheese.jpg">
-    <img src="images/mac&cheese.jpg" alt="mac&cheese" width="100%">
+  <a target="_blank" href="product.php?image=maccheese.jpg">
+    <img src="images/maccheese.jpg" alt="maccheese" width="100%">
   </a>
   <div class="desc">Our mac and cheese </div>
 </div>
     <div class="gallery">
-  <a target="_blank" href="images/water.jpg" width="100%">
+  <a target="_blank" href="product.php?image=water.jpg" width="100%">
     <img src="images/water.jpg" alt="water" width="100%">
   </a>
   <div class="desc">This is our water</div>
 </div>
 <div class="gallery">
-  <a target="_blank" href="images/juicie.jpg">
+  <a target="_blank" href="product.php?image=juicie.jpg">
     <img src="images/juicie.jpg" alt="juicie" width="100%">
   </a>
   <div class="desc">This is our juicie</div>
 </div>
     <div class="gallery">
-  <a target="_blank" href="images/juicie2.jpg">
+  <a target="_blank" href="product.php?image=juicie2.jpg">
     <img src="images/juicie2.jpg" alt="juicie" width="100%">
   </a>
   <div class="desc">This is our juicie</div>
     </div>
       <div class="gallery">
-  <a target="_blank" href="images/hotdog.jpg">
+  <a target="_blank" href="product.php?image=hotdog.jpg">
     <img src="images/hotdog.jpg" alt="hotdog" width="100%">
   </a>
   <div class="desc">This is our hotdog</div>
 </div> 
    <div class="gallery">
-  <a target="_blank" href="images/IMG_8479.jpg">
+  <a target="_blank" href="product.php?image=IMG_8479.jpg">
     <img src="images/IMG_8479.jpg" alt="hotdog" width="100%">
   </a>
   <div class="desc">This is our hotdog</div>
 </div> 
    <div class="gallery">
-  <a target="_blank" href="images/pie.jpg">
+  <a target="_blank" href="product.php?image=pie.jpg">
     <img src="images/pie.jpg" alt="pie" width="100%">
   </a>
   <div class="desc">This is our pie</div>
 </div>
    <div class="gallery">
-  <a target="_blank" href="images/pizza.jpg">
+  <a target="_blank" href="product.php?image=pizza.jpg">
     <img src="images/pizza.jpg" alt="pizza" width="100%">
   </a>
   <div class="desc">This is our pizza</div>
 </div>
    <div class="gallery">
-  <a target="_blank" href="images/popcorn.jpg">
+  <a target="_blank" href="product.php?image=popcorn.jpg">
     <img src="images/popcorn.jpg" alt="popcorn" width="100%">
   </a>
   <div class="desc">This is our popcorn</div>
 </div>      
    <div class="gallery">
-  <a target="_blank" href="images/pork_dumplings.jpg">
+  <a target="_blank" href="product.php?image=pork_dumplings.jpg">
     <img src="images/pork_dumplings.jpg" alt="pork dumplings" width="100%">
   </a>
   <div class="desc">This is our pork dumplings</div>
 </div>
    <div class="gallery">
-  <a target="_blank" href="images/spaghetti_on_bun.jpg">
+  <a target="_blank" href="product.php?image=spaghetti_on_bun.jpg">
     <img src="images/spaghetti_on_bun.jpg" alt="spaghetti on a bun" width="100%">
   </a>
   <div class="desc">This is our spaghetti on a bun</div>
 </div>
    <div class="gallery">
-  <a target="_blank" href="images/up_&_go_banana.jpg">
-    <img src="images/up_&_go_banana.jpg" alt="up & go banana" width="100%">
+  <a target="_blank" href="product.php?image=upgo_banana.jpg">
+    <img src="images/upgo_banana.jpg" alt="up & go banana" width="100%">
   </a>
   <div class="desc">This is our up and go bannana flavour</div>
 </div>
    <div class="gallery">
-  <a target="_blank" href="images/up_&_go_vanilla.jpg">
-    <img src="images/up_&_go_vanilla.jpg" alt="up & go vanilla" width="100%">
+  <a target="_blank" href="product.php?image=upgo_vanilla.jpg">
+    <img src="images/upgo_vanilla.jpg" alt="up & go vanilla" width="100%">
   </a>
   <div class="desc">This is our up and go vanilla flavour</div>
 </div>
