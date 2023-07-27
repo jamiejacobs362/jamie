@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 div.gallery {
   margin: 5px;
@@ -53,15 +54,15 @@ include "navbar.php";
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <label for="email">email:</label><br>
   <input type="text" id="email" name="email" value="john@mail.com"><br><br>
-    Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+    Suggestion: <textarea name="Suggestion" rows="5" cols="40"></textarea>
 <input type="submit" value="Submit">
 </form> 
         </div>
     </div>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+<?php
+include "footer.php";
+?>
     </div>
 </body>
 

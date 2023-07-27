@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 div.gallery {
   margin: 5px;
@@ -17,7 +17,7 @@ div.gallery {
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #0E834C;
 }
 
 div.gallery img {
@@ -28,7 +28,9 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  background-color: white;      
 }
+    
 </style>
 </head>
 
@@ -81,9 +83,9 @@ if (mysqli_num_rows($result) > 0) {
           
     
     
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+<?php
+include "footer.php";
+?>
     </div>
 </body>
 

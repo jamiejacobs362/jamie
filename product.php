@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 div.gallery {
   margin: 5px;
@@ -35,10 +35,11 @@ div.desc {
   margin: auto;
   text-align: center;
   font-family: arial;
+    background-color: white
 }
 
 .price {
-  color: grey;
+  color: black;
   font-size: 22px;
 }
 
@@ -47,7 +48,7 @@ div.desc {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: royalblue;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -55,7 +56,8 @@ div.desc {
 }
 
 .card button:hover {
-  opacity: 0.7;
+  background-color: seagreen;
+    
 }
 </style>
 </head>
