@@ -1,4 +1,4 @@
  <footer>
-  <p>Author: Hege Refsnes</p>
-  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  <p>Author: Jamie Jacobs</p>
+  <p><a href="jamieja@whangamata.school.nz">jamieja@whangamata.school.nz</a></p>
 </footer> 
