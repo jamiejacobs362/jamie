@@ -97,7 +97,7 @@ if (mysqli_num_rows($result) > 0) {
   <div class="main">
        <div class="wrapper">
         
-<h2 style="text-align:center">Product Card</h2>
+<h2 style="text-align:center"></h2>
 
 <div class="card">
   <img src="images/<?php print $image; ?>" alt="<?php print $description; ?>" style="width:100%">
@@ -119,9 +119,9 @@ if (mysqli_num_rows($result) > 0) {
           
     
     
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+<?php
+include "footer.php";
+?>
     </div>
 </body>
 
