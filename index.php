@@ -47,22 +47,41 @@ include "navbar.php";
 ?>
  <div class="row">
     <div class="main">
-    <h1>Welcome to <br> Kura Canteen</h1>
+        <?php
+            // Include the setup.php file to establish database connection
+    require_once 'setup.php';
+    // Fetch records from the "contacts" table
+    $sql = "SELECT * FROM pages where id=1";
+    $stmt = mysqli_prepare($conn, $sql);
+mysqli_stmt_execute($stmt);
+ $result = mysqli_stmt_get_result($stmt);
+
+if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+        $title1= $row['title1'];
+        $image1= $row['image1'];
+        $image2= $row['image2'];
+        $image3= $row['image3'];
+        }}
+        ?>
+        
+        <h2><?php echo $title1; ?></h2>
+    
     <div class="gallery">
-  <a target="_blank" href="images/shelf1.jpg">
-    <img src="images/shelf1.jpg" alt="Shelf where food avabile is shown" width="100%">
+  <a target="_blank" href="order.php">
+    <img src="images/<?php echo $image1; ?>" alt="Shelf where food avabile is shown" width="100%">
   </a>
 </div> 
 
     <div class="gallery">
-  <a target="_blank" href="images/shelf2.jpg">
-    <img src="images/shelf2.jpg" alt="Shelf where food avabile is shown" width="100%">
+  <a target="_blank" href="order.php">
+    <img src="images/<?php echo $image2; ?>" alt="Shelf where food avabile is shown" width="100%">
   </a>
 </div> 
         
-<div class="gallery">
-  <a target="_blank" href="images/shelf3.jpg">
-    <img src="images/shelf3.jpg" alt="Shelf where food avabile is shown" width="100%">
+<div    class="gallery">
+  <a target="_blank" href="order.php">
+    <img src="images/<?php echo $image3; ?>" alt="Shelf where food avabile is shown" width="100%">
   </a>
 </div>
 </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 02, 2023 at 02:02 AM
+-- Generation Time: Aug 22, 2023 at 04:12 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -40,11 +40,13 @@ CREATE TABLE `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `username`, `password`, `email`, `activation_code`) VALUES
-(1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com', ''),
+(1, 'admin', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'admin@mail.com', ''),
 (2, 'jamie', '$2y$10$/BDU21.H3.TH.uhJB./Dhu/NVeKLk9Rrg9wYUEl4BInBiDBtmP9Xm', 'jamieja@gmail.com', ''),
 (9, 'bob', '$2y$10$1c1mav.kpxzAZOiuQGcTRu.xTCHQ73en665p8qt1Do9s7x9.bjkY.', 'bob@mail.com', ''),
 (17, 'lucy', '$2y$10$UwV1L/Caz1fcS6yKzMfdqeU9bESsUv71SDHMI1yjrhUikMMi7ZOU2', 'lucy@mail.com', ''),
-(19, 'mary', '$2y$10$KOHUQ7spTty.bKVa8Tk0i.t4ljs1x9fMqxXjlWlxJB4nR3pMP.zuu', 'mary@mail.com', '');
+(19, 'mary', '$2y$10$KOHUQ7spTty.bKVa8Tk0i.t4ljs1x9fMqxXjlWlxJB4nR3pMP.zuu', 'mary@mail.com', ''),
+(21, 'leigh', '$2y$10$vdOAPM.PBKEwXpa/890WQOd7rOlQc/8UW/NPpkZ6EkYCS6peeYHrC', 'leigh@mail.com', ''),
+(22, 'otis', '$2y$10$HrqNDmrqWhBxPUuPJ4u2deP7LtyFK8osEvTyfF1sh/eGs86kp/gRy', 'otis@mail.com', '');
 
 -- --------------------------------------------------------
 
@@ -91,7 +93,7 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`id`, `name`, `price`, `description`, `image`) VALUES
-(1, 'Mac and cheese ', 3, 'This is our mac and cheese', 'maccheese.jpg'),
+(1, 'Mac and cheese ', 3, 'Mac and Cheese', 'maccheese.jpg'),
 (2, 'Bottle of water', 1, 'Bottle water', 'water.jpg'),
 (3, 'Juicie', 2, 'This is a juicie', 'juicie.jpg'),
 (4, 'juicie', 2, 'This is another juicie', 'juicie2.jpg'),
@@ -104,6 +106,28 @@ INSERT INTO `items` (`id`, `name`, `price`, `description`, `image`) VALUES
 (11, 'Spaghetti on a bun', 3, 'Spaghetti on a bun', 'spaghetti_on_bun.jpg'),
 (12, 'Up and go banana flavored', 2, 'Up and go banana flavored', 'upgo_banana.jpg'),
 (13, 'Up and go vanilla flavored', 2, 'Up and go vanilla flavored', 'upgo_vanilla.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pages`
+--
+
+CREATE TABLE `pages` (
+  `id` int(11) NOT NULL,
+  `title1` varchar(100) NOT NULL,
+  `text1` text NOT NULL,
+  `image1` varchar(50) NOT NULL,
+  `image2` varchar(50) NOT NULL,
+  `image3` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pages`
+--
+
+INSERT INTO `pages` (`id`, `title1`, `text1`, `image1`, `image2`, `image3`) VALUES
+(1, 'Welcome to Kura Canteen', '', 'shelf1.jpg', 'shelf2.jpg', 'shelf3.jpg');
 
 --
 -- Indexes for dumped tables
@@ -128,6 +152,12 @@ ALTER TABLE `items`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `pages`
+--
+ALTER TABLE `pages`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -135,7 +165,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -148,6 +178,12 @@ ALTER TABLE `contacts`
 --
 ALTER TABLE `items`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `pages`
+--
+ALTER TABLE `pages`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

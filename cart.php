@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-<title>Kura Canteen-suggestions Page</title>
+<title>Kura Canteen-Cart Page</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -23,11 +23,8 @@ include "navbar.php";
 <div class="row">
   <div class="main">
       
-    <div class=”Cart-Container”>
-      
-      </div>
-    </div>
-    
+
+    </div>   
 </div>
 
 <?php

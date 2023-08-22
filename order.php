@@ -1,5 +1,14 @@
 <!DOCTYPE html>
-
+<?php
+session_start();
+//print_r($_SESSION);
+if(isset($_SESSION)){
+    $loggedin=$_SESSION["loggedin"];
+    $name=$_SESSION["name"];
+    $id=$_SESSION["id"];
+}
+else{header('Location: phplogin/index.html');}
+?>
 <html lang="en">
 
 <head>
