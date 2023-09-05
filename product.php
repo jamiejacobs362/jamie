@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-
+<?php
+session_start();
+//print_r($_SESSION);
+if(isset($_SESSION["loggedin"])){
+    $loggedin=$_SESSION["loggedin"];
+    $name=$_SESSION["name"];
+    $id=$_SESSION["id"];
+}
+//else{header('Location: phplogin/index.html');}
+?>
 <html lang="en">
 
 <head>
-<title>order</title>
+<title>Product</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/style.css" rel="stylesheet" type="text/css">

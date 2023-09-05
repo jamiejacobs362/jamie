@@ -82,7 +82,7 @@ if (mysqli_num_rows($result) > 0) {
     }
 // Close the statement and database connection
  mysqli_stmt_close($stmt);
-mysqli_close($conn);
+mysqli_close($conn)
 
 
     
@@ -90,9 +90,9 @@ mysqli_close($conn);
 </div>
 </div>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+<?php
+include "footer.php";
+?>
     </div>
 </body>
 
