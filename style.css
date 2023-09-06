@@ -1,0 +1,152 @@
+body {
+  margin: auto;
+  padding: 0;
+  background-color: #dddddd;
+}
+.wrapper{
+
+    width: 85%;
+
+    margin:auto;
+
+    clear: both;
+
+    overflow: hidden;
+
+}
+
+
+
+.header {
+    padding: 20px; /* some padding */
+    text-align: center; /* center the text */
+    background: #ffffff; /* green background */
+    color: black; /* black text color */
+    margin: auto;
+  }
+  
+  /* Increase the font size of the <h1> element */
+  .header h1 {
+    font-size: 40px;
+  }
+  /* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #1F6196; /* blue background color */
+   
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right; /* Float a link to the right */
+  }
+  
+  /* Change color on hover/mouse-over */
+  .navbar a:hover {
+    background-color: #0E834C; /* Grey background color */
+    color: black; /* Black text color */
+  }
+/* Ensure proper sizing */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Column container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #6CB9BE; /* light blue background color */
+    padding: 20px; /* Some padding */
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: #6CB9BE; /* light blue background color */
+    padding: 20px; /* Some padding */
+      text-align: center;
+      
+  }
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #0E834C;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    
+    }
+
+ .wrapper{
+    width: 95%;        
+}
+      
+      /* Style the navigation menu */
+    .navbar {
+    float: none;
+    width: 100%;
+    
+}
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+        } 
+      
+  /* Hide the links inside the navigation menu (except for logo/home) */
+.navbar #myLinks {
+  display: none;
+}
+/* Style navigation menu links */
+.navbar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+/* Style the hamburger menu */
+.navbar a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* Add a grey background color on mouse-over */
+.navbar  a:hover {
+  background-color: #0E834C;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+}
+
+      
+
+

@@ -113,7 +113,10 @@ if (mysqli_num_rows($result) > 0) {
   <h1><?php print $name; ?></h1>
   <p class="price">$<?php print $price; ?></p>
   <p><?php print $description; ?>.</p>
+  <form action="buynow.php" method="POST" >
+        <input type="hidden" id="product_id" name="product_id" value="<?php print $id; ?>">
   <p><button>Add to Cart</button></p>
+       </form>
 </div>
            
            
