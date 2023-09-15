@@ -16,7 +16,7 @@ print $account_id;
     include"setup.php"; #connect to the database
     #insert needs the field names (no quotes) and the values (variables with quotes)
 
-    $sql = "INSERT INTO orders (account_id, product_id, date)
+    $sql = "INSERT INTO orders (account_id, items_id, date)
     VALUES ('$account_id', '$product_id','$date')";
     
     //print $sql; die();

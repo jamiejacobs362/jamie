@@ -58,10 +58,10 @@ include "navbar.php";
     // Include the setup.php file to establish database connection
     require_once 'setup.php';
     // Fetch records from the "contacts" table
-    $sql = "SELECT results.results_id, core.surname, core.firstname, results.standard_id, standards.title , results.Date, results.result 
-FROM results 
-INNER JOIN core ON results.core_id=core.core_id 
-INNER JOIN standards ON results.standard_id=standards.standard_id; ";
+    $sql = "SELECT orders.id, accounts.surname, accounts.firstname, items.name , orders.Date, items.price 
+FROM orders 
+INNER JOIN items ON orders.items_id=items.id 
+INNER JOIN accounts ON orders.account_id=accounts.id; ";
     $stmt = mysqli_prepare($conn, $sql);
 mysqli_stmt_execute($stmt);
  $result = mysqli_stmt_get_result($stmt);
@@ -69,16 +69,16 @@ mysqli_stmt_execute($stmt);
 if (mysqli_num_rows($result) > 0) {
     // Display the records in a table
         echo '<table>';
-        echo '<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Comment</th><th>Actions</th></tr>';
+        echo '<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>item_name</th><th>price</th><th>date</th>//tr>';
         while ($row = mysqli_fetch_assoc($result)) {
             echo '<tr>';
             echo '<td>' . $row['firstname'] . '</td>';
             echo '<td>' . $row['surname'] . '</td>';
-            echo '<td>' . $row['standard_id'] . '</td>';
-            echo '<td>' . $row['title'] . '</td>';
-            echo '<td>' . $row['result'] . '</td>';
+            echo '<td>' . $row['account_id'] . '</td>';
+            echo '<td>' . $row['name'] . '</td>';
+            echo '<td>' . $row['price'] . '</td>';
             echo '<td>' . $row['Date'] . '</td>';
-            echo '<td><a href="edit.php?id=' . $row['results_id'] . '">Edit</a> | <a href="delete.php?id=' . $row['results_id'] . '">Delete</a></td>';
+            echo '<td><a href="edit.php?id=' . $row['orders_id'] . '">Edit</a> | <a href="delete.php?id=' . $row['orders_id'] . '">Delete</a></td>';
                 echo '</tr>';
         }
         echo '</table>';
