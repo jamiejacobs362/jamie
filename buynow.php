@@ -22,6 +22,7 @@ print $account_id;
     //print $sql; die();
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
+    header('Location: order.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -33,7 +34,7 @@ $conn->close();
 }else {
    // Incorrect password
    echo 'Incorrect username and/or password!';
-   header('Location: ../admin/login.php');
+   header('Location: phplogin/login.php');
    $_SESSION['message'] = "Please log in to place an order!";
             }
 ?>

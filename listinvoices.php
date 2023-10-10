@@ -48,7 +48,7 @@ else{header('Location: phplogin/index.html');}
 </div>
 
 <?php
-include "navbar.php";
+include "navbaradmin.php";
 ?>
  <div class="row">
     <div class="main">
