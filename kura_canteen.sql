@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 15, 2023 at 05:06 AM
+-- Generation Time: Oct 12, 2023 at 12:14 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -48,7 +48,9 @@ INSERT INTO `accounts` (`id`, `username`, `surname`, `firstname`, `password`, `e
 (17, 'lucy', '', '', '$2y$10$UwV1L/Caz1fcS6yKzMfdqeU9bESsUv71SDHMI1yjrhUikMMi7ZOU2', 'lucy@mail.com', ''),
 (19, 'mary', '', '', '$2y$10$KOHUQ7spTty.bKVa8Tk0i.t4ljs1x9fMqxXjlWlxJB4nR3pMP.zuu', 'mary@mail.com', ''),
 (21, 'leigh', '', '', '$2y$10$vdOAPM.PBKEwXpa/890WQOd7rOlQc/8UW/NPpkZ6EkYCS6peeYHrC', 'leigh@mail.com', ''),
-(22, 'otis', 'Jacobs', 'Otis', '$2y$10$HrqNDmrqWhBxPUuPJ4u2deP7LtyFK8osEvTyfF1sh/eGs86kp/gRy', 'otis@mail.com', '');
+(22, 'otis', 'Jacobs', 'Otis', '$2y$10$HrqNDmrqWhBxPUuPJ4u2deP7LtyFK8osEvTyfF1sh/eGs86kp/gRy', 'otis@mail.com', ''),
+(24, 'boris', '', '', '$2y$10$yl.G5aATnMDJiEzMWhNVlO86wq.OK7e62wql6IKLCJkWrNXv70PAm', 'boris@mail.com', ''),
+(25, 'vern', 'Dempster', 'Vern', '$2y$10$jx0F7czdK/5OmiypPR1W7e8fPjvhp4GGU42qjKFDM6FYl2tuVOJle', 'vern@mail.com', '');
 
 -- --------------------------------------------------------
 
@@ -153,7 +155,15 @@ INSERT INTO `orders` (`id`, `account_id`, `items_id`, `date`) VALUES
 (3, 22, 1, '2023-09-06'),
 (4, 22, 3, '2023-09-08'),
 (5, 22, 1, '2023-09-15'),
-(6, 22, 1, '2023-09-15');
+(6, 22, 1, '2023-09-15'),
+(7, 24, 1, '2023-10-11'),
+(8, 24, 1, '2023-10-11'),
+(9, 24, 2, '2023-10-11'),
+(10, 25, 5, '2023-10-11'),
+(11, 25, 9, '2023-10-12'),
+(12, 25, 9, '2023-10-12'),
+(13, 25, 9, '2023-10-12'),
+(14, 1, 9, '2023-10-12');
 
 -- --------------------------------------------------------
 
@@ -288,7 +298,7 @@ ALTER TABLE `standards`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -312,7 +322,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `pages`

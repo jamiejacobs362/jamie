@@ -69,16 +69,18 @@ mysqli_stmt_execute($stmt);
 if (mysqli_num_rows($result) > 0) {
     // Display the records in a table
         echo '<table>';
-        echo '<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>item_name</th><th>price</th><th>date</th>//tr>';
+        echo '<tr><th>First Name</th><th>Last Name</th><th>Invoice</th><th>item_name</th><th>price</th><th>date</th></tr>';
         while ($row = mysqli_fetch_assoc($result)) {
+            //print_r($row);
+            $ordersid = $row['id'];
             echo '<tr>';
             echo '<td>' . $row['firstname'] . '</td>';
             echo '<td>' . $row['surname'] . '</td>';
-            echo '<td>' . $row['account_id'] . '</td>';
+            echo '<td>' . $ordersid . '</td>';
             echo '<td>' . $row['name'] . '</td>';
             echo '<td>' . $row['price'] . '</td>';
             echo '<td>' . $row['Date'] . '</td>';
-            echo '<td><a href="edit.php?id=' . $row['orders_id'] . '">Edit</a> | <a href="delete.php?id=' . $row['orders_id'] . '">Delete</a></td>';
+            echo '<td><a href="edit.php?id=' .$ordersid  . '">Edit</a> | <a href="delete.php?id=' . $ordersid  . '">Delete</a></td>';
                 echo '</tr>';
         }
         echo '</table>';

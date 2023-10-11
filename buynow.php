@@ -22,7 +22,7 @@ print $account_id;
     //print $sql; die();
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
-    header('Location: order.php');
+   // header('Location: order.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
