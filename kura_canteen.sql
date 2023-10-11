@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 12, 2023 at 12:14 AM
+-- Generation Time: Oct 12, 2023 at 01:02 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -163,7 +163,9 @@ INSERT INTO `orders` (`id`, `account_id`, `items_id`, `date`) VALUES
 (11, 25, 9, '2023-10-12'),
 (12, 25, 9, '2023-10-12'),
 (13, 25, 9, '2023-10-12'),
-(14, 1, 9, '2023-10-12');
+(14, 1, 9, '2023-10-12'),
+(15, 22, 2, '2023-10-12'),
+(16, 22, 2, '2023-10-12');
 
 -- --------------------------------------------------------
 
@@ -322,7 +324,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `pages`
