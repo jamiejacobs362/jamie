@@ -52,7 +52,7 @@ include "navbar.php";
 ?>
  <div class="row">
     <div class="main">
-    <h2>Welcome to <br> Kura Canteen</h2>  
+    <h2></h2>  
         
 <?php 
     // Include the setup.php file to establish database connection
@@ -71,13 +71,11 @@ mysqli_stmt_execute($stmt);
 if (mysqli_num_rows($result) > 0) {
     // Display the records in a table
         echo '<table>';
-        echo '<tr><th>First Name</th><th>Last Name</th><th>Invoice</th><th>item_name</th><th>price</th><th>date</th></tr>';
+        echo '<tr><th>Invoice</th><th>Product name</th><th>Price</th><th>Date</th></tr>';
         while ($row = mysqli_fetch_assoc($result)) {
             //print_r($row);
             $ordersid = $row['id'];
             echo '<tr>';
-            echo '<td>' . $row['firstname'] . '</td>';
-            echo '<td>' . $row['surname'] . '</td>';
             echo '<td>' . $ordersid . '</td>';
             echo '<td>' . $row['name'] . '</td>';
             echo '<td>' . $row['price'] . '</td>';
