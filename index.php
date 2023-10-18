@@ -52,7 +52,13 @@ div.desc {
 </div>
 
 <?php
-include "navbar.php";
+        if (isset($loggedin) and $id == 1){
+            include "navbaradmin.php";
+        }
+        else {
+        
+            include "navbar.php";
+        }
 ?>
  <div class="row">
     <div class="main">

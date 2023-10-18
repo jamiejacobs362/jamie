@@ -57,6 +57,18 @@ include "navbar.php";
 <?php 
     // Include the setup.php file to establish database connection
     require_once 'setup.php';
+          $sql = "SELECT accounts.surname, accounts.firstname
+FROM orders 
+INNER JOIN accounts ON orders.account_id=accounts.id 
+WHERE accounts.id = '$customer_id'";
+//print $sql;
+    $stmt = mysqli_prepare($conn, $sql);
+mysqli_stmt_execute($stmt);
+ $result = mysqli_stmt_get_result($stmt);
+        $row = mysqli_fetch_assoc($result);
+        $firstname = $row['firstname'];
+        $surname = $row['surname'];
+        
     // Fetch records from the "contacts" table
     $sql = "SELECT orders.id, accounts.surname, accounts.firstname, items.name , orders.Date, items.price 
 FROM orders 
@@ -71,6 +83,7 @@ mysqli_stmt_execute($stmt);
 if (mysqli_num_rows($result) > 0) {
     // Display the records in a table
         echo '<table>';
+        echo "<tr><th> <h2>  Orders for $firstname $surname </h2></th></tr>"; 
         echo '<tr><th>Invoice</th><th>Product name</th><th>Price</th><th>Date</th></tr>';
         while ($row = mysqli_fetch_assoc($result)) {
             //print_r($row);
