@@ -18,28 +18,6 @@ if(isset($_SESSION["loggedin"])){
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 29%;
-}
-
-div.gallery:hover {
-  border: 1px solid #0E834C;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-  background-color: white;      
-}
-    
 </style>
 </head>
 

@@ -22,7 +22,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 32%;
+  width: 31%;
 }
 
 div.gallery:hover {
@@ -38,6 +38,10 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+    @media screen and (max-width: 700px) {
+        div.gallery {  width: 100%;}
+
+    }
 </style>
 
 </head>
@@ -84,19 +88,19 @@ if (mysqli_num_rows($result) > 0) {
     
     <div class="gallery">
   <a target="_blank" href="order.php">
-    <img src="images/<?php echo $image1; ?>" alt="Shelf where food avabile is shown" width="100%">
+    <img src="images/<?php echo $image1; ?>" alt="Shelf where food avabile is shown">
   </a>
 </div> 
 
     <div class="gallery">
   <a target="_blank" href="order.php">
-    <img src="images/<?php echo $image2; ?>" alt="Shelf where food avabile is shown" width="100%">
+    <img src="images/<?php echo $image2; ?>" alt="Shelf where food avabile is shown">
   </a>
 </div> 
         
 <div    class="gallery">
   <a target="_blank" href="order.php">
-    <img src="images/<?php echo $image3; ?>" alt="Shelf where food avabile is shown" width="100%">
+    <img src="images/<?php echo $image3; ?>" alt="Shelf where food avabile is shown">
   </a>
 </div>
 </div>
