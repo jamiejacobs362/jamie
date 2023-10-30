@@ -52,7 +52,7 @@ include "navbaradmin.php";
 ?>
  <div class="row">
     <div class="main">
-    <h2>Welcome to <br> Kura Canteen</h2>  
+    <h2>Pupil orders for <br> Kura Canteen</h2>  
         
 <?php 
     // Include the setup.php file to establish database connection
